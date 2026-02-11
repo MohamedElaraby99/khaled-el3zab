@@ -8,7 +8,7 @@ import { login } from "../Redux/Slices/AuthSlice";
 import InputBox from "../Components/InputBox/InputBox";
 import { FaUser, FaEnvelope, FaLock, FaEye, FaEyeSlash, FaPhone, FaUserTie, FaSignInAlt } from "react-icons/fa";
 import { generateDeviceFingerprint, getDeviceType, getBrowserInfo, getOperatingSystem } from "../utils/deviceFingerprint";
-import logo2 from "../assets/logo2.png";
+import logo from "../assets/logo.png";
 import { BRAND } from "../Constants/LayoutConfig";
 
 export default function Login() {
@@ -120,7 +120,7 @@ export default function Login() {
                 {/* Logo Container */}
                 <div className="relative bg-white dark:bg-gray-800 rounded-full p-4 shadow-2xl border-4 border-primary/20 dark:border-primary/50 transform hover:scale-110 transition-all duration-500">
                   <img
-                    src={BRAND.logoUrl || logo2}
+                    src={logo}
                     alt={BRAND.platformName}
                     className="w-16 h-16 object-contain drop-shadow-lg"
                   />
